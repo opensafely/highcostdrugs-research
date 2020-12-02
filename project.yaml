@@ -6,21 +6,15 @@ expectations:
 actions:
 
   generate_cohorts:
-    run: cohortextractor:latest generate_cohort --study-definition study_definition
-    outputs:
-      highly_sensitive:
-        cohort: output/input.csv
-
-  run_model:
-    run: stata-mp:latest analysis/model.do
-    needs: [generate_cohorts]
+    run: cohortextractor:latest generate_cohort --study-definition getdata
     outputs:
       moderately_sensitive:
-        log: logs/model.log
+        cohort: output/input.csv
+
 
   run_all:
     needs:
-      - run_model
+      - generate_cohorts
     # In order to be valid this action needs to define a run commmand and some
     # output. We don't really care what these are but the below does the trick.
     # In a future release of the platform, this special action won't need to be
