@@ -5,21 +5,9 @@ expectations:
 
 actions:
 
-  generate_cohorts:
-    run: cohortextractor:latest generate_cohort --study-definition getdata
+  run_model:
+    run: r:latest analysis/getdata.r
+    needs: 
     outputs:
       moderately_sensitive:
-        cohort: output/input.csv
-
-
-  run_all:
-    needs:
-      - generate_cohorts
-    # In order to be valid this action needs to define a run commmand and some
-    # output. We don't really care what these are but the below does the trick.
-    # In a future release of the platform, this special action won't need to be
-    # defined at all.
-    run: cohortextractor:latest --version
-    outputs:
-      moderately_sensitive:
-        whatever: project.yaml
+        data: outputs/data.csv
