@@ -9,4 +9,4 @@ actions:
     run: r:latest analysis/getdata.R
     outputs:
       moderately_sensitive:
-        log: logs/model.log
+        data: output/data.csv
