@@ -6,8 +6,8 @@ expectations:
 actions:
 
   run_model:
-    run: r:latest analysis/getdata.r
-    needs: 
-    outputs:
-      moderately_sensitive:
-        data: outputs/data.csv
+    run: stata-mp:latest analysis/model.do
+      needs: [generate_cohorts]
+      outputs:
+        moderately_sensitive:
+          log: logs/model.log
