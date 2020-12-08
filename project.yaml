@@ -6,7 +6,7 @@ expectations:
 actions:
 
   run_model:
-    run: stata-mp:latest analysis/model.do
+    run: r:latest analysis/getdata.R
     outputs:
       moderately_sensitive:
         log: logs/model.log
