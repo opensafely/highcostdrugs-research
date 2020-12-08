@@ -7,7 +7,6 @@ actions:
 
   run_model:
     run: stata-mp:latest analysis/model.do
-      needs:
-      outputs:
-        moderately_sensitive:
-          log: logs/model.log
+    outputs:
+      moderately_sensitive:
+        log: logs/model.log
