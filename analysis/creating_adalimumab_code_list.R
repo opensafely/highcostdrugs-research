@@ -1,7 +1,7 @@
 ## simple script to create new csv with unique drug names from the high cost drugs dataset
 
-install.packages("tidyverse")
-install.packages("here")
+# install.packages("tidyverse")
+# install.packages("here")
 library(tidyverse)
 
 drug_list <- read.csv(file = here::here("GitHub", "highcostdrugs-research","released-output", "drug_name_unique.csv")) %>%
@@ -17,4 +17,5 @@ code_list_adalimumab <- drug_list %>%
   filter(In_Group == TRUE) %>%
   select(DrugName)
 
-write.csv(code_list_adalimumab, file = here::here("GitHub", "highcostdrugs-research","codelists", "code_list_adalimumab.csv"))
+write.table(code_list_adalimumab, file = here::here("GitHub", "highcostdrugs-research","codelists", "code_list_adalimumab.csv"),
+            row.names = FALSE, col.names = FALSE)
