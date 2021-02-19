@@ -58,7 +58,7 @@ study = StudyDefinition(
                 drug_name_matches= adalimumab_codes,
                 on_or_before="2020-03-31",
                 find_first_match_in_period=True,
-                returning="binary flag",
+                returning="binary_flag",
                 date_format="YYYY-MM",
                 return_expectations=None,
             )
