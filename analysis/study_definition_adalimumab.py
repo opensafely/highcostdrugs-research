@@ -10,7 +10,7 @@ from cohortextractor import (
 # Import codelists
 
 adalimumab_codes = codelist_from_csv(
-    "codelists/code_list_adalimumab.csv", system="highcostdrugs", column="DrugName"
+    "codelists/opensafely-high-cost-drugs-adalimumab.csv", system="highcostdrugs", column="olddrugname"
 )
 
 # Specifiy study defeinition
