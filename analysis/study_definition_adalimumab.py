@@ -60,6 +60,6 @@ study = StudyDefinition(
                 find_first_match_in_period=True,
                 returning="binary_flag",
                 date_format="YYYY-MM",
-                return_expectations=None,
+                return_expectations={"incidence": 0.05,},
             )
 )
