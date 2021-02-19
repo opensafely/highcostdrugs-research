@@ -1,58 +1,17 @@
-2021-02-18T16:47:44.042423300Z 2021-02-18 16:47:44 [info     ] Generating cohort for study_definition_adalimumab in output [cohortextractor.cohortextractor] 
-2021-02-18T16:47:44.045594400Z Exception at 2021-02-18 16:47:44 UTC
-2021-02-18T16:47:44.045622600Z Traceback (most recent call last):
-2021-02-18T16:47:44.045625100Z   File "/app/cohortextractor/process_covariate_definitions.py", line 354, in _type_from_return_value
-2021-02-18T16:47:44.045655800Z     return mapping[returning]
-2021-02-18T16:47:44.045659700Z KeyError: 'binary flag'
-2021-02-18T16:47:44.045661500Z 
-2021-02-18T16:47:44.045663200Z During handling of the above exception, another exception occurred:
-2021-02-18T16:47:44.045665000Z 
-2021-02-18T16:47:44.045666800Z Traceback (most recent call last):
-2021-02-18T16:47:44.045668500Z   File "/usr/local/bin/cohortextractor", line 33, in <module>
-2021-02-18T16:47:44.045684900Z     sys.exit(load_entry_point('opensafely-cohort-extractor', 'console_scripts', 'cohortextractor')())
-2021-02-18T16:47:44.045688100Z   File "/app/cohortextractor/cohortextractor.py", line 695, in main
-2021-02-18T16:47:44.045809900Z     generate_cohort(
-2021-02-18T16:47:44.045817900Z   File "/app/cohortextractor/cohortextractor.py", line 145, in generate_cohort
-2021-02-18T16:47:44.045836100Z     _generate_cohort(
-2021-02-18T16:47:44.045839400Z   File "/app/cohortextractor/cohortextractor.py", line 174, in _generate_cohort
-2021-02-18T16:47:44.045935600Z     study = load_study_definition(study_name)
-2021-02-18T16:47:44.045941800Z   File "/app/cohortextractor/cohortextractor.py", line 491, in load_study_definition
-2021-02-18T16:47:44.046055600Z     return getattr(importlib.import_module(name), value)
-2021-02-18T16:47:44.046061300Z   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
-2021-02-18T16:47:44.046080600Z     return _bootstrap._gcd_import(name[level:], package, level)
-2021-02-18T16:47:44.046083500Z   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
-2021-02-18T16:47:44.046156000Z   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
-2021-02-18T16:47:44.046182900Z   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
-2021-02-18T16:47:44.046195900Z   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
-2021-02-18T16:47:44.046255700Z   File "<frozen importlib._bootstrap_external>", line 783, in exec_module
-2021-02-18T16:47:44.046301100Z   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
-2021-02-18T16:47:44.046422200Z   File "/workspace/analysis/study_definition_adalimumab.py", line 18, in <module>
-2021-02-18T16:47:44.046430100Z     study = StudyDefinition(
-2021-02-18T16:47:44.046432600Z   File "/app/cohortextractor/study_definition.py", line 26, in __init__
-2021-02-18T16:47:44.046434600Z     self._original_covariates = process_covariate_definitions(covariates)
-2021-02-18T16:47:44.046444000Z   File "/app/cohortextractor/process_covariate_definitions.py", line 18, in process_covariate_definitions
-2021-02-18T16:47:44.046461900Z     covariate_definitions = add_column_types(covariate_definitions)
-2021-02-18T16:47:44.046465100Z   File "/app/cohortextractor/process_covariate_definitions.py", line 212, in add_column_types
-2021-02-18T16:47:44.046476800Z     query_args["column_type"] = get_column_type(name, query_type, query_args)
-2021-02-18T16:47:44.046479700Z   File "/app/cohortextractor/process_covariate_definitions.py", line 225, in __call__
-2021-02-18T16:47:44.046538900Z     column_type = method(**query_args)
-2021-02-18T16:47:44.046544900Z   File "/app/cohortextractor/process_covariate_definitions.py", line 314, in type_of_with_high_cost_drugs
-2021-02-18T16:47:44.046602100Z     return self._type_from_return_value(returning)
-2021-02-18T16:47:44.046608300Z   File "/app/cohortextractor/process_covariate_definitions.py", line 356, in _type_from_return_value
-2021-02-18T16:47:44.046659400Z     raise ValueError(f"No matching type for '{returning}'")
-2021-02-18T16:47:44.046669600Z ValueError: No matching type for 'binary flag'
+2021-02-19T15:04:52.847889500Z 2021-02-19 15:04:52 [info     ] Generating cohort for study_definition_adalimumab in output [cohortextractor.cohortextractor] 
+2021-02-19T15:04:53.267148000Z 2021-02-19 15:04:53 [info     ] Successfully created cohort and covariates at output/input_adalimumab.csv [cohortextractor.cohortextractor] 
 
 
-state: failed
+state: succeeded
 commit: none
 docker_image_id: sha256:02156c1b7817411d7ac7b2b91f9452e32caf63947ab8b506ae86bdfe616fb009
 job_id: 5neqw2huucrvpgfr
 run_by_user: arowan
-created_at: 2021-02-18T16:47:36Z
-started_at: 2021-02-18T16:47:43Z
-completed_at: 2021-02-18T16:47:45Z
+created_at: 2021-02-19T15:04:44Z
+started_at: 2021-02-19T15:04:51Z
+completed_at: 2021-02-19T15:04:54Z
 
-Job exited with an error code
+Completed successfully
 
 outputs:
-  (no outputs)
+  output/input_adalimumab.csv  - highly_sensitive
