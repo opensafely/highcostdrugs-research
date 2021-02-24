@@ -23,7 +23,7 @@ study = StudyDefinition(
     },
     # This line defines the study population
     population=patients.registered_with_one_practice_between(
-        "2018-04-01", "2020-03-01"
+        "2020-01-01", "2020-03-31"
     ),
 
     # https://github.com/opensafely/risk-factors-research/issues/49
@@ -56,10 +56,9 @@ study = StudyDefinition(
     #https://github.com/opensafely-core/cohort-extractor/blob/819b1ca256d4c0f3ff2fca68389cc846417a021c/cohortextractor/patients.py#L1731-L1765
     prescribed_adalimumab=patients.with_high_cost_drugs(
                 drug_name_matches= adalimumab_codes,
-                on_or_before="2020-03-31",
+                between = ["2019-10-01", "2020-03-31"],
                 find_first_match_in_period=True,
                 returning="binary_flag",
-                date_format="YYYY-MM",
                 return_expectations={"incidence": 0.05,},
             )
 )
