@@ -1,0 +1,10 @@
+{
+  "files": {
+    "opensafely-high-cost-drugs-adalimumab.csv": {
+      "id": "opensafely/high-cost-drugs-adalimumab/34b56b69",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/high-cost-drugs-adalimumab/34b56b69/",
+      "downloaded_at": "2021-02-19 12:52:20.431650Z",
+      "sha": "626eec6903dc0dbfd6a9d83398e1eef6e999cc33"
+    }
+  }
+}
