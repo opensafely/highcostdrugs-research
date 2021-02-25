@@ -33,7 +33,8 @@ dataset_1 <- study_population %>%
 # summarise at a national level by sex, age group and prescribed_adalimumab
 summary_nat <- dataset_1 %>%
   group_by(age_group, sex, prescribed_adalimumab) %>%
-  summarise(count_patients = n())
+  summarise(count_patients = n()) %>%
+  mutate(count_patients = ifelse(count_patients <= 5, NULL, count_patients))
 
 # write out summary national output
 write.csv(summary_nat, file = here::here("output", "summary_nat_adalimumab.csv"))
@@ -41,7 +42,8 @@ write.csv(summary_nat, file = here::here("output", "summary_nat_adalimumab.csv")
 # summarise at a stp level by prescribed_adalimumab
 summary_stp <- dataset_1 %>%
   group_by(stp, prescribed_adalimumab) %>%
-  summarise(count_patients = n())
+  summarise(count_patients = n()) %>%
+  mutate(count_patients = ifelse(count_patients <= 5, NULL, count_patients))
 
 # write out summary stp output
 write.csv(summary_stp, file = here::here("output", "summary_stp_adalimumab.csv"))
