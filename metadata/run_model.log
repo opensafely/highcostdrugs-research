@@ -1,13 +1,14 @@
-2021-02-19T15:05:26.758670500Z -- Attaching packages --------------------------------------- tidyverse 1.3.0 --
-2021-02-19T15:05:26.762853200Z v ggplot2 3.3.2     v purrr   0.3.4
-2021-02-19T15:05:26.762874100Z v tibble  3.0.3     v dplyr   1.0.2
-2021-02-19T15:05:26.762876700Z v tidyr   1.1.2     v stringr 1.4.0
-2021-02-19T15:05:26.762878700Z v readr   1.3.1     v forcats 0.5.0
-2021-02-19T15:05:26.847537900Z -- Conflicts ------------------------------------------ tidyverse_conflicts() --
-2021-02-19T15:05:26.847561300Z x dplyr::filter() masks stats::filter()
-2021-02-19T15:05:26.847564000Z x dplyr::lag()    masks stats::lag()
-2021-02-19T15:05:26.862256300Z here() starts at /workspace
-2021-02-19T15:05:26.988899800Z `summarise()` regrouping output by 'stp', 'age_group', 'sex' (override with `.groups` argument)
+2021-02-25T11:04:55.914899400Z -- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+2021-02-25T11:04:55.919434100Z v ggplot2 3.3.2     v purrr   0.3.4
+2021-02-25T11:04:55.919448400Z v tibble  3.0.3     v dplyr   1.0.2
+2021-02-25T11:04:55.919451500Z v tidyr   1.1.2     v stringr 1.4.0
+2021-02-25T11:04:55.919453900Z v readr   1.3.1     v forcats 0.5.0
+2021-02-25T11:04:56.014302400Z -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+2021-02-25T11:04:56.014336900Z x dplyr::filter() masks stats::filter()
+2021-02-25T11:04:56.014340300Z x dplyr::lag()    masks stats::lag()
+2021-02-25T11:04:56.037787900Z here() starts at /workspace
+2021-02-25T11:04:56.170134900Z `summarise()` regrouping output by 'age_group', 'sex' (override with `.groups` argument)
+2021-02-25T11:04:56.180752300Z `summarise()` regrouping output by 'stp' (override with `.groups` argument)
 
 
 state: succeeded
@@ -15,11 +16,13 @@ commit: none
 docker_image_id: sha256:601f44378b3f74a33e33bf67960a057692e52290dc9cb08718472632bbf2480c
 job_id: ktrmmoqx27azqqpw
 run_by_user: arowan
-created_at: 2021-02-19T15:05:18Z
-started_at: 2021-02-19T15:05:25Z
-completed_at: 2021-02-19T15:05:29Z
+created_at: 2021-02-25T11:04:47Z
+started_at: 2021-02-25T11:04:54Z
+completed_at: 2021-02-25T11:04:58Z
 
 Completed successfully
 
 outputs:
-  output/summary_adalimumab.csv  - moderately_sensitive
+  output/input_adalimumab.csv        - moderately_sensitive
+  output/summary_nat_adalimumab.csv  - moderately_sensitive
+  output/summary_stp_adalimumab.csv  - moderately_sensitive
