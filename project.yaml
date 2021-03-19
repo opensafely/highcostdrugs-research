@@ -7,13 +7,13 @@ expectations:
 actions:
 
   generate_study_population:
-    run: cohortextractor:latest generate_cohort --study-definition study_definition_adalimumab
+    run: cohortextractor:latest generate_cohort --study-definition study_definition_hcd
     outputs:
       highly_sensitive:
-        cohort: output/input_adalimumab.csv
+        cohort: output/input_hcd.csv
         
   run_model:
-    run: r:latest analysis/summary_output.R
+    run: r:latest analysis/summary_output_hcd.R
     needs: [generate_study_population]
     outputs:
       moderately_sensitive:
