@@ -1,14 +1,15 @@
-2021-03-19T11:42:23.057478100Z -- Attaching packages --------------------------------------- tidyverse 1.3.0 --
-2021-03-19T11:42:23.069021300Z v ggplot2 3.3.2     v purrr   0.3.4
-2021-03-19T11:42:23.069064500Z v tibble  3.0.3     v dplyr   1.0.2
-2021-03-19T11:42:23.069071900Z v tidyr   1.1.2     v stringr 1.4.0
-2021-03-19T11:42:23.069077600Z v readr   1.3.1     v forcats 0.5.0
-2021-03-19T11:42:23.263389900Z -- Conflicts ------------------------------------------ tidyverse_conflicts() --
-2021-03-19T11:42:23.263431700Z x dplyr::filter() masks stats::filter()
-2021-03-19T11:42:23.263436400Z x dplyr::lag()    masks stats::lag()
-2021-03-19T11:42:23.293904600Z here() starts at /workspace
-2021-03-19T11:42:23.586135100Z `summarise()` regrouping output by 'age_group', 'sex' (override with `.groups` argument)
-2021-03-19T11:42:23.619070600Z `summarise()` regrouping output by 'stp' (override with `.groups` argument)
+2021-03-23T13:44:10.960490600Z -- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+2021-03-23T13:44:10.965959300Z v ggplot2 3.3.2     v purrr   0.3.4
+2021-03-23T13:44:10.965980900Z v tibble  3.0.3     v dplyr   1.0.2
+2021-03-23T13:44:10.965991000Z v tidyr   1.1.2     v stringr 1.4.0
+2021-03-23T13:44:10.965994800Z v readr   1.3.1     v forcats 0.5.0
+2021-03-23T13:44:11.081851800Z -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+2021-03-23T13:44:11.081898500Z x dplyr::filter() masks stats::filter()
+2021-03-23T13:44:11.081904100Z x dplyr::lag()    masks stats::lag()
+2021-03-23T13:44:11.098913200Z here() starts at /workspace
+2021-03-23T13:44:11.420971700Z `summarise()` regrouping output by 'age group', 'sex' (override with `.groups` argument)
+2021-03-23T13:44:12.740729600Z `summarise()` regrouping output by 'ethnicity group', 'sex' (override with `.groups` argument)
+2021-03-23T13:44:13.199156600Z `summarise()` regrouping output by 'stp' (override with `.groups` argument)
 
 
 state: succeeded
@@ -16,13 +17,17 @@ commit: none
 docker_image_id: sha256:601f44378b3f74a33e33bf67960a057692e52290dc9cb08718472632bbf2480c
 job_id: ktrmmoqx27azqqpw
 run_by_user: arowan
-created_at: 2021-03-19T11:42:02Z
-started_at: 2021-03-19T11:42:19Z
-completed_at: 2021-03-19T11:42:26Z
+created_at: 2021-03-23T13:43:51Z
+started_at: 2021-03-23T13:44:09Z
+completed_at: 2021-03-23T13:44:16Z
 
 Completed successfully
 
 outputs:
-  output/input_hcd.csv        - moderately_sensitive
-  output/summary_nat_hcd.csv  - moderately_sensitive
-  output/summary_stp_hcd.csv  - moderately_sensitive
+  output/age-sex-dist.png          - moderately_sensitive
+  output/ethnicity-sex-dist.png    - moderately_sensitive
+  output/input_hcd.csv             - moderately_sensitive
+  output/stp-dist.png              - moderately_sensitive
+  output/summary_agesex.csv        - moderately_sensitive
+  output/summary_ethnicitysex.csv  - moderately_sensitive
+  output/summary_stp.csv           - moderately_sensitive

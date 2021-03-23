@@ -5,6 +5,12 @@
       "url": "https://codelists.opensafely.org/codelist/opensafely/high-cost-drugs-adalimumab/34b56b69/",
       "downloaded_at": "2021-02-19 12:52:20.431650Z",
       "sha": "626eec6903dc0dbfd6a9d83398e1eef6e999cc33"
+    },
+    "opensafely-ethnicity.csv": {
+      "id": "opensafely/ethnicity/2020-04-27",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/ethnicity/2020-04-27/",
+      "downloaded_at": "2021-03-23 12:55:19.035509Z",
+      "sha": "3d2f3998b71863a80b24d60f6f4282e14191ae13"
     }
   }
 }
