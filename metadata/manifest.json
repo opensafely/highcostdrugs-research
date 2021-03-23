@@ -1,0 +1,54 @@
+{
+  "files": {
+    "output/age-sex-dist.png": {
+      "created_by_action": "run_model",
+      "privacy_level": "moderately_sensitive"
+    },
+    "output/ethnicity-sex-dist.png": {
+      "created_by_action": "run_model",
+      "privacy_level": "moderately_sensitive"
+    },
+    "output/input_hcd.csv": {
+      "created_by_action": "run_model",
+      "privacy_level": "moderately_sensitive"
+    },
+    "output/stp-dist.png": {
+      "created_by_action": "run_model",
+      "privacy_level": "moderately_sensitive"
+    },
+    "output/summary_agesex.csv": {
+      "created_by_action": "run_model",
+      "privacy_level": "moderately_sensitive"
+    },
+    "output/summary_ethnicitysex.csv": {
+      "created_by_action": "run_model",
+      "privacy_level": "moderately_sensitive"
+    },
+    "output/summary_stp.csv": {
+      "created_by_action": "run_model",
+      "privacy_level": "moderately_sensitive"
+    }
+  },
+  "actions": {
+    "generate_study_population": {
+      "state": "succeeded",
+      "commit": "none",
+      "docker_image_id": "sha256:02156c1b7817411d7ac7b2b91f9452e32caf63947ab8b506ae86bdfe616fb009",
+      "job_id": "5neqw2huucrvpgfr",
+      "run_by_user": "arowan",
+      "created_at": "2021-03-23T13:40:57Z",
+      "completed_at": "2021-03-23T13:41:22Z"
+    },
+    "run_model": {
+      "state": "succeeded",
+      "commit": "none",
+      "docker_image_id": "sha256:601f44378b3f74a33e33bf67960a057692e52290dc9cb08718472632bbf2480c",
+      "job_id": "ktrmmoqx27azqqpw",
+      "run_by_user": "arowan",
+      "created_at": "2021-03-23T13:43:51Z",
+      "completed_at": "2021-03-23T13:44:16Z"
+    }
+  },
+  "workspace": "highcostdrugs-research",
+  "repo": "C:\\Users\\arowan\\Documents\\GitHub\\highcostdrugs-research"
+}
