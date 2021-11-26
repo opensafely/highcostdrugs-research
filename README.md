@@ -1,6 +1,6 @@
 # OpenSAFELY High Cost Drugs Research
 
-This is the code and configuration for investigating the high cost drugs data available as part of OpenSAFELY.
+This is the code and configuration for investigating the high cost drugs data available as part of OpenSAFELY. A preprint is in-press and will be available soon.
 
 * If you are interested in how we defined our variables, take a look at the [study definition](analysis/study_definition.py); this is written in `python`, but non-programmers should be able to understand what is going on there
 * If you are interested in how we defined our code lists, look in the [codelists folder](./codelists/).
