@@ -18,10 +18,10 @@
 ## the dummy database connection details are as follows:
 
 driver = 'ODBC Driver 17 for SQL Server'
-server = 'covid.ebmdatalab.net,1433'
-database = 'OPENCoronaExport' 
-username = 'SA'
-password = 'ahsjdkaJAMSHDA123['
+server = 
+database = 
+
+
 
 ## convert this to a string
 dbconn_string = paste0(
@@ -29,7 +29,7 @@ dbconn_string = paste0(
   ';SERVER=',server,
   ';DATABASE=',database,
   ';UID=',username,
-  ';PWD=',password
+
 )
 
 ## 3. add this string to your environment:
